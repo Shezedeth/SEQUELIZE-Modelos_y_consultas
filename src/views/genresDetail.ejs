@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include('partials/head', {title: genre.name }) %>
+
+<body>
+    <figure>
+        <img src="/img/logo-DH.png" alt="Logo Digital House">
+    </figure>    
+    
+    <ul class="nav nav-underline">
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="/">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="/movies">Listado de peliculas</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="/movies/new">Ultimos estrenos</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="/movies/recommended">Top 5</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="/genres">Listado de géneros</a></li>
+      </ul>
+    
+    <h1><%= genre.name %> </h1>
+    <br>
+    <p>NAME: <%= genre.name %> </p>
+    <p>RANKIG: <%= genre.ranking %> </p>
+
+
+    <%- include('partials/scripts') %>
+
+</body>
+</html>
